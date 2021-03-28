@@ -1,9 +1,15 @@
 #include <iostream>
 #include "slidingPuzzle.h"
 #include "slidingPuzzleState.h"
+#include "routePlanner.h"
+#include "traveler.h"
+#include "city.h"
+#include "routePlannerSimulatedAnnealing.h"
 
 int main()
 {
+
+
     // init random
     srand(time(NULL));
     slidingPuzzle a;
@@ -16,9 +22,18 @@ int main()
         //std::cout << "waiting...\n";
         //std::cin.ignore();
         trys++;
+        //is_complete = true;
     }
     aa.print_state();
     std::cout << "times attempted: " << trys << std::endl;
+
+    RPSA aaaa = RPSA(10);
+    aaaa.run_sa();
+
+
+
+
+
 /* 
     std::cout << "test" << std::endl;
     spState sp_state;
