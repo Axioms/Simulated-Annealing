@@ -5,7 +5,9 @@
       "type": "shell",
       "label": "g++ build active file",
       "command": "/usr/bin/g++",
-      "args": ["-g", "${fileDirname}/slidingPuzzle.cpp", "${fileDirname}/slidingPuzzleState.cpp", 
+      "args": ["-g", "${fileDirname}/slidingPuzzle.cpp", "${fileDirname}/slidingPuzzleState.cpp",
+              "${fileDirname}/routePlanner.cpp", "${fileDirname}/routePlannerSimulatedAnnealing.cpp",
+              "${fileDirname}/traveler.cpp","${fileDirname}/city.cpp",
               "${fileDirname}/main.cpp", "-o", "${fileDirname}/main"],
       "options": {
         "cwd": "/usr/bin"
